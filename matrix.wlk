@@ -66,12 +66,12 @@ object nave {
         return pasajeros.any{p => p.esElElegido()}
     }
 
-    method chocar(){
+    method chocarNave(){
         pasajeros.forEach{p => p.saltar()}
         pasajeros.clear()
     }
 
-    method acelerar(){
+    method acelerarNave(){
         pasajeros.forEach{p =>
             if(not p.esElElegido()){
                 p.saltar()
